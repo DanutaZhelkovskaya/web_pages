@@ -1,0 +1,890 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700|Montserrat:300,400,700,900');
+//font-family: 'Lato', sans-serif;
+//font-family: 'Montserrat', sans-serif;
+
+html{
+    font-size: 10px;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+$title__color: #333366;
+$description__color: #666666;
+$price_color: gray;
+$main_blue: #6699cc;
+$orange_color: #ffbb42;
+$happy_clients_color: #ffc155;
+
+h2{
+    font-size: 2.3rem;
+    font-family: 'Montserrat';
+    color: $title__color;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+}
+h3{
+    font-size: 1.3rem;
+    font-family: 'Montserrat';
+    color: $description__color;
+    font-weight: 400;
+    text-align: center;
+    margin-top:-2rem;
+    margin-bottom: 8.5rem;
+}
+h4{
+    font-family: 'Lato';
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: $description__color;
+    text-transform: uppercase;
+}
+h5{
+    font-family: 'Lato';
+    font-weight: 300;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+h6{
+    font-family: 'Lato';
+    font-size: 1.3rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+p{
+    color: $description__color;
+    font-size: 1.2rem;
+    font-family: 'Lato';
+    font-weight: 400;
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+}
+#button{
+    background-color: $orange_color;
+    color: white;
+    padding: 1.6rem 1rem; 
+    text-transform: uppercase;
+    border-radius: 4px;
+   // margin: 3rem 0 4.7rem 0;
+    &:hover{
+        transform: rotate(0deg) scale(1.1,1.1) ;
+        transition: transform 300ms linear 0ms; 
+    }
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+//fill="rgb(62, 129, 184)" class="Capa" width: 4.5rem height: 4.5rem
+.header{
+    padding: 2rem 0 2.4rem 0;
+    display: flex;
+    justify-content: space-between;
+    &__logo{
+        float: left;
+    }
+    .nav{
+        ul{
+            list-style-type: none;
+            //justify-content: space-evenly;
+            li{
+                margin-right: 2rem;
+            }
+            a{
+                padding: 1rem 2rem;
+                color: $title__color;
+                &:hover{
+                color: white;
+                background-color: $orange_color;
+                padding: 1rem 2rem;
+                border-radius: 4px;
+                }
+            }
+        }
+    }
+      
+      @media (max-width:3000px) {
+        .menu {
+          display: none;
+        }
+        .trigger {
+          display: inline-block;
+          margin: 3px;
+          cursor: pointer;
+        }
+        .trigger i {
+          display: block;
+          width: 30px;
+          height: 6px;
+          margin: 4px auto;
+          background: #222;
+        }
+        .show {
+          display: block;
+        }
+      }
+    
+}
+
+.home{
+    background-color: $main_blue;
+    padding: 10rem 0 34rem 0;
+    h2,h3{
+        color: white;
+    }
+    ul{
+        list-style-type:none;
+        list-style-position:outside;
+        margin:0px;
+        padding:0px;
+        display: flex;
+        justify-content: center; 
+        input{
+            margin: 0 2rem;
+            /* border: none; */
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            padding: 1rem 8rem 1rem 3rem;
+        }
+    }
+    &__banner{
+        display: flex;
+        justify-content: center;
+        &__laptop{
+            position: absolute;
+        }
+    }
+}
+
+.our__servises{
+    padding: 10rem 0 15.8rem 0;
+    &__items{
+        display: flex;
+        flex-wrap: wrap;
+        &__block{
+            display: flex;
+            width: 48%;
+            margin: 0 auto;
+            margin-bottom: 8rem;
+            &__title{
+                position: relative;
+                margin-left: 8rem;
+            }
+            &__img{
+                width: 4.5rem;
+                height: 4.5rem;
+                background-color: rgb(161, 161, 161);
+                margin-top: 2rem;
+                position: absolute;
+            }
+        }
+    }
+}
+
+.about__us{
+    background-color: #ffcc66;
+    height: 62.6rem;
+    width: 100vw;
+    //padding: 0 0 17.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    .image{
+    background-image: url('../img/Layer 27.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50vw;
+    height: 100%
+    }
+    &__text{
+        width: 50vw;
+        height: 100%;
+        color:white;
+        padding-left: 4rem;
+        margin-top: 16rem;
+    }
+}
+
+.choos__price{
+    background-color: #e7edf3;
+    padding: 13.6rem 0 19.6rem 0;
+    width: 100vw;
+    &__plans{
+        display: flex;
+        margin-top: 8rem;
+        font-family: 'Lato';
+        &__block{
+            width: 33%;
+            height: 44rem;
+            padding: 5.6rem 3rem 0 3rem;
+            background-color: white;
+            transition: all 300ms linear 0ms;
+            text-align: center;
+            color: #999999;
+            &__price{
+                .dollar{
+                font-size: 2rem;
+                margin:1.5rem 6rem 1.2rem 0;
+                color: $orange_color;
+                span{
+                    font-size: 4.4rem;
+                    font-weight: 700;
+                    position: absolute;
+                }}
+                hr{
+                    border: 0.5px solid #cccccc;
+                    margin: 1.5rem 0;
+                }
+                .blue{
+                    color: #cccccc;
+                    margin: 2rem;
+                }
+                &__button{
+                    margin-top:4rem;
+                }
+            }
+            &:hover{ 
+               transform: rotate(0deg) scale(1.1,1.1) ;
+                z-index: 999;
+                transition: transform 300ms linear 0ms; 
+                background-color: #6699cc;
+                color: white;
+                hr{
+                background-color:  #99cccc;
+                }
+                .blue{
+                    color: #b3d5f5;
+                }
+            }
+        }
+    }
+}
+
+.how__it__works{
+    padding: 15.4rem 0 15.2rem 0;
+    text-align: center;
+    .description{
+        margin-bottom: 8rem;
+    }
+    &__diagram{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 8rem;
+        .step{
+            margin-top: 4rem;
+            text-align: center;
+            img{
+                margin-bottom: 2rem;
+            }
+        }
+        .arrow__down{
+            margin-top: 11rem;
+        }
+    }
+}
+
+.happy__clients{
+    background-color: $happy_clients_color;
+    padding: 14rem 0 16.4rem 0;
+    h2,h3{
+        color: white;
+        margin-bottom: 5rem;
+    }
+    &__comments{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        &__block{
+            padding: 4.5rem 3rem 5.2rem  3.5rem;
+            background-color: white;
+            width: 40%;
+            margin-bottom: 1.5rem;
+            display: flex;
+            img{
+                width: 9rem;
+                height: 9rem;
+                margin-right: 2rem;
+            }
+            .person{
+                span{
+                    color:#f6772c;
+                }
+            }
+        }
+    }
+}
+.newsletter{
+    padding: 15.4rem 0 5.4rem 0;
+    &__form{
+        padding-bottom: 3rem;
+         ul{
+        list-style-type:none;
+        list-style-position:outside;
+        margin:0px;
+        padding:0px;
+        display: flex;
+        justify-content: center; 
+        }
+        input{
+            margin: 0 2rem;
+            /* border: none; */
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            padding: 1rem 8rem 1rem 3rem;
+        }
+    }
+   
+    hr{
+        margin-top: 5rem;
+        border: 1px #e7e8ea solid;
+    }
+    &__map{
+        background-image: url(../img/map.png);
+        background-repeat: no-repeat;
+        height: 66vh;
+        padding: 4.4rem 0 29.7rem 0;
+        background-position: center;
+        background-size: cover;
+        &__address{
+            //display: flex;
+           // justify-content: center;
+            text-align: center;
+            h3{
+                text-transform: uppercase;
+                font-weight: 700;
+                color: white;
+                margin-bottom: 0;
+            }
+            h4{
+                color: #879295;
+                line-height: 2rem;
+                span{
+                    color: #ffbb42;
+                }
+            }
+            &__text{
+                margin-top: -22rem;
+                &__logo{
+                    margin-top: 10rem;
+                }
+            }
+
+        }
+    }
+}
+.contacts{
+    padding: 6.8rem 0 5.2rem 0;
+    text-align: center;
+    color:$title__color;
+    &__nav{
+        ul{
+            list-style-type: none;
+            display: flex;
+            justify-content: space-evenly;
+            a{
+                transition: 1s;
+                padding: 1rem 2rem;
+                color: $title__color;
+                &:hover{
+                color: white;
+                background-color: $orange_color;
+                padding: 1rem 2rem;
+                border-radius: 4px;
+                }
+            }
+        }
+    }
+    &__phone{
+        h5{
+        font-weight: 500;
+        color:$title__color;
+        }
+        
+    }
+    &__links{
+        font-size: 2rem;
+        a{  
+            transition: 1s;
+            margin: 0 1.7rem;
+            color: $main_blue;
+            &:hover{
+            color: $orange_color;
+            
+            }
+        }
+    }
+
+}
+.footer{
+    background-color: $main_blue;
+    margin: 0;
+    padding: 2rem 0;
+    text-align: center;
+    p{
+        font-weight: 300;
+        color: white;
+    }
+}
+
+@media (max-width: 320px){
+   
+
+    .our__servises{
+        &__items{
+            &__block{
+                width: 90%;
+            }
+        }
+    }
+    .about__us{
+        padding: 0 0 22rem 0;
+        flex-wrap: wrap;
+        .image{
+        height: 37%;
+        width: 100vw;
+        background-size: cover;
+        }
+    
+        &__text{
+            width: 100vw;    
+        }
+    }
+    .choos__price{
+        &__plans{
+            display: flex;
+            flex-wrap: wrap;
+            &__block{
+                width: 100%;
+                margin-bottom: 5rem;
+               // height: 43.9rem;
+                color: #999999;
+                background-color: white;
+                &:hover{
+                    transform: rotate(0deg) scale(1,1) ;
+                    z-index: 999;
+                    transition: transform 300ms linear 0ms; 
+                    background-color: white;
+                }
+            }
+        }
+    }
+    .how__it__works{
+        // .description{
+        //     margin-bottom: 8rem;
+        // }
+        &__diagram{
+            display: flex;
+            flex-wrap: wrap;
+            .step{
+                margin-top: 4rem;
+            }
+            .arrow{
+                display: none;
+            }
+        }
+    }
+    .happy__clients{
+        &__comments{
+            &__block{
+                img{
+                    width: 7rem;
+                    height: 7rem;
+                    margin-right: 2rem;
+                }
+                width: 90%;
+            }
+        }
+    }
+    .newsletter{
+        padding: 15.4rem 0 5.4rem 0;
+        &__map{
+        height: 81rem; 
+        }
+        &__form{
+             ul{
+                flex-wrap: wrap;
+                input{
+                    margin-bottom: 2rem;  
+                }
+            }
+        }
+    } 
+   
+}
+@media (max-width: 375px){
+    .our__servises{
+        &__items{
+            &__block{
+                width: 90%;
+            }
+        }
+    }
+    .about__us{
+        flex-wrap: wrap;
+        .image{
+        height: 44%;
+        width: 100vw;
+        background-size: cover;
+        }
+    
+        &__text{
+            width: 100vw;    
+        }
+    }
+    .choos__price{
+        &__plans{
+            display: flex;
+            flex-wrap: wrap;
+            &__block{
+                margin-bottom: 5rem;
+                width: 100%;
+                //height: 43.9rem;
+                background-color: white;
+                &:hover{
+                    transform: rotate(0deg) scale(1,1) ;
+                    z-index: 999;
+                    transition: transform 300ms linear 0ms; 
+                    background-color: white;
+                }
+            }
+        }
+    }
+    .how__it__works{
+        // .description{
+        //     margin-bottom: 8rem;
+        // }
+        &__diagram{
+            display: flex;
+            flex-wrap: wrap;
+            .step{
+                margin-top: 4rem;
+                width: 30%;
+            }
+            .arrow{
+                display: none;
+            }
+        }
+    }
+    .happy__clients{
+        &__comments{
+            &__block{
+                img{
+                    width: 7rem;
+                    height: 7rem;
+                    margin-right: 2rem;
+                }
+                width: 90%;
+            }
+        }
+    }
+    .contacts{
+        &__nav{
+            ul{
+                flex-direction: column;
+                display: flex;
+            }
+        }
+    }
+    .home{
+        padding: 10rem 0 20rem 0;
+        ul{
+            flex-wrap: wrap;
+            input{
+                margin: 0 32rem 2rem 32rem;
+            }
+        }
+        &__banner{
+            &__laptop{
+                margin-top: 6rem;
+                position: absolute;
+                height: auto;
+                width: auto;
+                max-width: 303px;
+                max-height: 300px;    
+            }
+        }
+    }
+}
+
+@media (max-width: 425px){
+    .our__servises{
+        &__items{
+            &__block{
+                width: 80%;
+            }
+        }
+    }
+    .about__us{
+        flex-wrap: wrap;
+        padding-bottom: 24rem;
+    }
+    .choos__price{
+        &__plans{
+            display: flex;
+            flex-wrap: wrap;
+            &__block{
+                margin-bottom: 5rem;
+                width: 100%;
+                //height: 43.9rem;
+                background-color: white;
+                &:hover{
+                    transform: rotate(0deg) scale(1,1) ;
+                    z-index: 999;
+                    transition: transform 300ms linear 0ms; 
+                    background-color: white;
+                }
+            }
+        }
+    }
+    .how__it__works{
+        // .description{
+        //     margin-bottom: 8rem;
+        // }
+        &__diagram{
+            display: flex;
+            flex-wrap: wrap;
+            .step{
+                margin-top: 4rem;
+                width: 50%;
+            }
+            .arrow__down{
+                display: none;
+            }
+        }
+    }
+    .happy__clients{
+        &__comments{
+            &__block{
+                img{
+                    width: 9rem;
+                    height: 9rem;
+                    margin-right: 2rem;
+                }
+                width: 90%;
+            }
+        }
+    }
+    .contacts{
+        &__nav{
+            ul{
+                flex-direction: column;
+                display: flex;
+            }
+        }
+    }
+    .newsletter{
+        padding: 15.4rem 0 5.4rem 0;
+        &__map{
+        height: 81rem; 
+        }
+        &__form{
+             ul{
+                flex-wrap: wrap;
+                input{
+                    margin-bottom: 2rem;  
+                }
+            }
+        }
+    } 
+    .home{
+        padding: 10rem 0 21rem 0;
+        ul{
+            flex-wrap: wrap;
+            input{
+                margin: 0 32rem 2rem 32rem;
+            }
+        }
+        &__banner{
+            &__laptop{
+                max-width: 30rem;   
+            }
+        }
+    }
+}
+@media (max-width: 645px){
+    .our__servises{
+        &__items{
+            &__block{
+                width: 80%;
+            }
+        }
+    }
+    .about__us{
+        flex-wrap: wrap;
+        .image{
+        height: 75%;
+        width: 100vw;
+        background-size: cover;
+        }
+    
+        &__text{
+            width: 100vw;    
+        }
+    }
+    .how__it__works{
+        // .description{
+        //     margin-bottom: 8rem;
+        // }
+        &__diagram{
+            display: flex;
+            flex-wrap: wrap;
+            .step{
+                margin-top: 4rem;
+                width: 50%;
+            }
+            .arrow{
+                display: none;
+            }
+        }
+    }
+    .home{
+        padding: 10rem 0 20rem 0;
+        ul{
+            flex-wrap: wrap;
+            input{
+                margin: 0 32rem 2rem 32rem;
+            }
+        }
+        &__banner{
+            &__laptop{
+                margin-top: 6rem;
+                position: absolute;
+                height: auto;
+                width: auto;
+                max-width: 377px;
+            }
+        }
+    }
+}
+@media (max-width: 768px){
+    .about__us{
+        flex-wrap: wrap;
+        .image{
+        height: 50%;
+        width: 100%;
+        background-size: cover;
+        }
+    
+        &__text{
+            width: 100vw;    
+        }
+    }
+    .how__it__works{
+        // .description{
+        //     margin-bottom: 8rem;
+        // }
+        &__diagram{
+            display: flex;
+            flex-wrap: wrap;
+            .step{
+                margin-top: 4rem;
+                width: 80%;
+            }
+            .arrow{
+                display: none;
+            }
+        }
+    }
+    .happy__clients{
+        &__comments{
+            &__block{
+                img{
+                    width: 12rem;
+                    height: 12rem;
+                    margin-right: 2rem;
+                }
+                width: 80%;
+            }
+        }
+    }
+    .contacts{
+        &__nav{
+            ul{
+                flex-direction: column;
+                display: flex;
+                
+            }
+        }
+    }
+   
+}
+@media (max-width: 896px){
+    .how__it__works{
+        &__diagram{
+            display: flex;
+            flex-wrap: wrap;
+            .step{
+                margin-top: 4rem;
+                width: 50%;
+            }
+            .arrow{
+                display: none;
+            }
+        }
+    }
+}
+@media (max-width: 900px){
+    .about__us{
+        flex-wrap: wrap;
+        padding: 0 0 17.5rem 0;
+        .image{
+        height: 70%;
+        width: 100%;
+        background-size: cover;
+        }
+        &__text{
+            width: 100vw; 
+            margin-top: 5rem;
+        }
+    }
+    .how__it__works{
+        // .description{
+        //     margin-bottom: 8rem;
+        // }
+        &__diagram{
+            display: flex;
+            flex-wrap: wrap;
+            .step{
+                margin-top: 4rem;
+                width: 50%;
+            }
+            .arrow__down{
+                display: none;
+            }
+        }
+    }
+  
+}
+@media (max-width: 1024px){
+    .newsletter{
+        &__map{
+            height: 17vh;
+        }
+    }
+    .home{
+        ul{
+            flex-wrap: wrap;
+            input{
+                margin: 0 32rem 2rem 32rem;
+            }
+        }
+    }
+}
+@media (max-width: 1440px){
+    .newsletter{
+        &__map{
+            height: 30vh;
+        }
+    }
+}
+@media (max-width: 2560px){
+    .newsletter{
+        &__map{
+            height: 43vh;
+        }
+    }
+}

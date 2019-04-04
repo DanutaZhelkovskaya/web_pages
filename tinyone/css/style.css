@@ -1,0 +1,124 @@
+body {
+  font-size: 10px;
+  font-family: 'PT Sans', sans-serif;
+  color: black;
+  margin: 0;
+  padding: 0; }
+
+a {
+  color: black;
+  text-decoration: none; }
+  a:hover {
+    color: black; }
+
+ul li {
+  display: block;
+  padding: 0;
+  margin: 0; }
+
+h1 {
+  color: black;
+  font-weight: bold;
+  font-size: 2.5rem; }
+
+h2 {
+  color: #333333;
+  font-weight: 800;
+  font-size: 1.4rem; }
+
+h3 {
+  color: black;
+  font-weight: 800;
+  font-size: 1.2rem; }
+
+p {
+  color: #666666;
+  font-size: 1.1rem; }
+
+p, div, span, a {
+  line-height: 1.2em; }
+
+.container {
+  align-self: center; }
+
+.header {
+  background-color: #ffcc00;
+  padding: 5rem 0 10.7rem 0; }
+  .header .menu {
+    margin-top: 8px; }
+    .header .menu__item {
+      margin: 0 57px; }
+      .header .menu__item a {
+        font-size: 22px;
+        font-weight: 700;
+        color: #000; }
+  .header .main__title {
+    margin: 10rem 0 2.7rem 0; }
+  .header .main__description {
+    margin-bottom: 2.4rem; }
+  .header .main__text {
+    margin: 3rem 0 2rem 0; }
+  .header .main__logotypes__link i {
+    font-size: 3.2rem;
+    margin: 0 3.5rem 0 0; }
+    .header .main__logotypes__link i:hover {
+      opacity: .5;
+      transform: scale(1.2);
+      transition-duration: 1s; }
+  .header .main__image {
+    margin-top: 5rem; }
+
+.tinyone__features {
+  padding: 11.3rem 0 13rem 0; }
+  .tinyone__features__title {
+    text-align: center;
+    margin: 0 0 9rem 0; }
+  .tinyone__features .feature {
+    margin-bottom: 3rem; }
+    .tinyone__features .feature i {
+      font-size: 3.7rem;
+      margin-right: 3rem; }
+    .tinyone__features .feature h3 {
+      font-weight: 600; }
+
+.keepInTouch {
+  background-color: black;
+  padding: 9.5rem 0 0 0; }
+  .keepInTouch h2 {
+    color: #ffcc00; }
+  .keepInTouch p {
+    color: #999999; }
+  .keepInTouch .form {
+    text-align: center;
+    margin-left: 14rem; }
+    .keepInTouch .form__input {
+      background: #fff;
+      font-size: 16px;
+      font-family: 'PT Sans', sans-serif;
+      border-radius: 5px;
+      width: 580px;
+      padding: 14px 0;
+      margin-right: 21px;
+      border: 0;
+      padding-left: 23px;
+      outline: none; }
+    .keepInTouch .form__button {
+      font-family: 'PT Sans', sans-serif;
+      background: #fcdb00;
+      color: #000;
+      text-transform: uppercase;
+      font-size: 16px;
+      font-weight: 700;
+      border-radius: 5px;
+      width: 126px;
+      border: 0;
+      padding: 14px 0;
+      cursor: pointer;
+      outline: none; }
+
+.footer {
+  background-color: black;
+  padding: 5.5rem 0 10rem 0;
+  text-align: center; }
+  .footer p {
+    color: #fff; }
